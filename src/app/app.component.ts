@@ -13,7 +13,7 @@ import { RouterLink, RouterOutlet } from '@angular/router';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  title = 'teluguonlineworld';
+  title = 'Telugu Online World';
   year: number=new Date().getFullYear();
 }
 

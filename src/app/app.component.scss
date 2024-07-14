@@ -1,38 +1,58 @@
+// Define variables for easier customization
+$header-background-color: #4194ed;
+$header-text-color: #333333;
+$header-padding: 14px;
+$footer-background-color: $header-background-color; // Reuse header background color
+$footer-text-color: #fff;
+$footer-padding: $header-padding; // Reuse header padding
+
+/* Header Styles */
 .header {
-    background-color: #4194ed; /* Light blue color */
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #333333; /* Contrast color (dark gray) for text */
-  }
-  
-  .header h1 {
-    font-size: 2em;
+  background-color: $header-background-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $header-text-color;
+  padding: $header-padding;
+  box-sizing: border-box;
+
+  h1 {
+    font-size: 1rem; // Adjust font size as needed
     margin: 0;
+    font-weight: bold;
   }
-  
-  .header ul {
+
+  ul {
     list-style: none;
     margin: 0;
     padding: 0;
+
+    li {
+      display: inline-block;
+      margin-right: 20px;
+    }
   }
-  
-  .header li {
-    display: inline-block;
-    margin-right: 20px;
-  }
-  
-  .header a {
+
+  a {
     text-decoration: none;
-    color: inherit; /* Inherit color from header */
+    color: inherit;
+
+    &:hover {
+      color: #007bff;
+    }
   }
-  
-  .header a:hover {
-    color: #007bff; /* Hover color (blue) */
+}
+
+/* Footer Styles */
+.footer {
+  background-color: $footer-background-color;
+  padding: $footer-padding;
+  text-align: center;
+  color: $footer-text-color;
+  box-sizing: border-box;
+
+  p {
+    font-size: 0.8rem; // Adjust font size as needed
+    margin: 0;
   }
-  .footer {
-    background-color: #4194ed; /* Inherits background color from header */
-    padding: 10px;
-    text-align: center; /* Optional: Center alignment */
-  }
+}
