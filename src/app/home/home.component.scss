@@ -130,13 +130,7 @@ section {
   }
 }
 
-// Button styling
-.contact-buttons {
-  display: flex;
-  justify-content: center; // Center the buttons
-  gap: 20px; // Space between buttons
-  margin-top: 20px; // Space above buttons
-}
+
 
 .button {
   background-color: $primary-color; // Primary button color
@@ -174,7 +168,79 @@ section {
         margin-right: 8px; /* Space between icon and text */
     }
 }
+.cta-cards {
+  display: flex;
+  justify-content: center; /* Center the card */
+  padding: 20px; /* Add padding */
+}
 
+.contact-card {
+  background-color: #ffffff; /* Card background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  padding: 20px;
+  text-align: center; /* Center text */
+  max-width: 400px; /* Max width for the card */
+  width: 100%; /* Full width for small screens */
+}
+
+.contact-buttons {
+  display: flex; /* Use flexbox for buttons */
+  flex-direction: column; /* Stack buttons on small screens */
+  gap: 10px; /* Space between buttons */
+  margin-top: 15px; /* Space above buttons */
+}
+
+.email-address {
+  margin-top: 10px; /* Space above email address */
+  font-size: 0.9rem; /* Smaller font size */
+  color: #666; /* Grey color for email */
+}
+
+/* Button styling */
+.button {
+  padding: 12px 20px; /* Button padding */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* No underline */
+  font-weight: bold; /* Bold text */
+  transition: background-color 0.3s; /* Smooth transition */
+  display: inline-block; /* Ensure buttons fit well */
+  width: 100%; /* Full width on small screens */
+}
+
+.whatsapp-button {
+  background-color: rgb(84, 199, 150); /* Custom WhatsApp color */
+  color: #ffffff; /* White text */
+}
+
+.whatsapp-button:hover {
+  background-color: #66cda3; /* Lighter on hover */
+}
+
+.button:not(.whatsapp-button) {
+  background-color: #2196F3; /* Primary button color */
+  color: #ffffff; /* White text */
+}
+
+.button:not(.whatsapp-button):hover {
+  background-color: #1e88e5; /* Darker on hover */
+}
+
+/* Responsive adjustments */
+@media (min-width: 600px) {
+  .contact-buttons {
+    flex-direction: row; /* Side by side on larger screens */
+    justify-content: center; /* Center buttons */
+  }
+
+  .button {
+    width: auto; /* Auto width for larger screens */
+  }
+
+  .email-address {
+    margin-top: 15px; /* Space above email address */
+  }
+}
 
 // Footer
 footer {
