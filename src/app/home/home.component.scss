@@ -131,59 +131,6 @@ section {
 }
 
 
-
-.button {
-  background-color: $primary-color; // Primary button color
-  color: $secondary-color; // Text color
-  padding: 12px 25px; // Larger padding
-  border-radius: 5px; // Rounded corners
-  text-decoration: none; // No underline
-  font-weight: 600; // Bold text
-  font-size: 1rem; // Consistent font size
-  transition: background-color 0.3s, transform 0.3s; // Smooth transitions
-  border: 1px solid transparent; // Initial border
-
-  &:hover {
-    background-color: $accent-color; // Change color on hover
-    transform: translateY(-2px); // Lift effect on hover
-    border: 1px solid $accent-color; // Border appears on hover
-  }
-
-  &:active {
-    transform: translateY(0); // Reset on click
-  }
-}
-.whatsapp-button {
-    background-color: rgb(84, 199, 150); /* WhatsApp color */
-    color: $secondary-color; /* Text color */
-    border: none; /* No border */
-    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth transition */
-
-    &:hover {
-        background-color: rgb(84, 199, 150);
-        transform: translateY(-2px); /* Lift effect on hover */
-    }
-
-    i {
-        margin-right: 8px; /* Space between icon and text */
-    }
-}
-.cta-cards {
-  display: flex;
-  justify-content: center; /* Center the card */
-  padding: 20px; /* Add padding */
-}
-
-.contact-card {
-  background-color: #ffffff; /* Card background */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  padding: 20px;
-  text-align: center; /* Center text */
-  max-width: 400px; /* Max width for the card */
-  width: 100%; /* Full width for small screens */
-}
-
 .contact-buttons {
   display: flex; /* Use flexbox for buttons */
   flex-direction: column; /* Stack buttons on small screens */
