@@ -9,5 +9,12 @@ import { RouterLink } from '@angular/router';
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
+whatsappLink: string;
 
+  constructor() {
+    // Base64 encoded phone number
+    const base64Phone = "OTE3NDA2MjAyMjIwMg==";
+    const phoneNumber = atob(base64Phone);
+    this.whatsappLink = `https://wa.me/${phoneNumber}`;
+  }
 }

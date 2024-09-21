@@ -1,8 +1,185 @@
-h1,h2 {
-    font-size: 1rem;
+// Define updated color variables
+$primary-color: #2196F3; // Blue as primary
+$secondary-color: #ffffff; // White as secondary
+$accent-color: #FF5722; // Accent orange
+$background-color: #f4f6f9; // Light background
+$text-color: #333; // Dark text for readability
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: $background-color;
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+  font-size: 16px; // Base font size
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  background-color: $primary-color;
+  color: $secondary-color;
+  padding: 40px 20px;
+  text-align: center;
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+
+    @media (max-width: 768px) {
+      font-size: 2rem; // Smaller heading on mobile
+    }
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+section {
+  padding: 40px 20px;
+  text-align: center;
+
+  h2 {
+    color: $primary-color;
+    font-size: 2rem;
+    margin-bottom: 20px;
   }
 
   p {
     font-size: 1rem;
+    margin-bottom: 20px;
   }
-    
+}
+
+.video-section {
+  iframe {
+    width: 100%;
+    height: auto; // Responsive video
+  }
+}
+
+.reasons {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap; // Allow items to wrap
+  justify-content: center; // Center items
+  margin-top: 20px;
+
+  li {
+    flex: 1 1 200px; // Allow items to grow and shrink
+    margin: 10px; // Space between items
+    text-align: center; // Center text
+    font-size: 1.2rem;
+
+    i {
+      font-size: 2rem;
+      margin-right: 10px;
+      color: $primary-color;
+    }
+  }
+}
+
+// Card styling for a grid layout
+.learning-cards, .pricing-cards, .cta-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+
+  .card {
+    background-color: $secondary-color;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    h3 {
+      color: $primary-color;
+    }
+
+    .price {
+      font-size: 1.5rem;
+      color: $accent-color;
+    }
+  }
+}
+
+// Button styling
+.contact-buttons {
+  display: flex;
+  justify-content: center; // Center the buttons
+  gap: 20px; // Space between buttons
+  margin-top: 20px; // Space above buttons
+}
+
+.button {
+  background-color: $primary-color; // Primary button color
+  color: $secondary-color; // Text color
+  padding: 12px 25px; // Larger padding
+  border-radius: 5px; // Rounded corners
+  text-decoration: none; // No underline
+  font-weight: 600; // Bold text
+  font-size: 1rem; // Consistent font size
+  transition: background-color 0.3s, transform 0.3s; // Smooth transitions
+  border: 1px solid transparent; // Initial border
+
+  &:hover {
+    background-color: $accent-color; // Change color on hover
+    transform: translateY(-2px); // Lift effect on hover
+    border: 1px solid $accent-color; // Border appears on hover
+  }
+
+  &:active {
+    transform: translateY(0); // Reset on click
+  }
+}
+.whatsapp-button {
+    background-color: rgb(84, 199, 150); /* WhatsApp color */
+    color: $secondary-color; /* Text color */
+    border: none; /* No border */
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+
+    &:hover {
+        background-color: rgb(84, 199, 150);
+        transform: translateY(-2px); /* Lift effect on hover */
+    }
+
+    i {
+        margin-right: 8px; /* Space between icon and text */
+    }
+}
+
+
+// Footer
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: $primary-color;
+  color: $secondary-color;
+  font-size: 0.9rem;
+}
+
+// Responsive adjustments
+@media (max-width: 768px) {
+  section {
+    padding: 20px 10px; // Reduced padding
+  }
+}
+
+@media (max-width: 480px) {
+  .button {
+    padding: 10px 20px; // Smaller button padding for mobile
+  }
+}

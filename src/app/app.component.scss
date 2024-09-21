@@ -1,58 +1,55 @@
-// Define variables for easier customization
-$header-background-color: #4194ed;
-$header-text-color: #333333;
-$header-padding: 14px;
-$footer-background-color: $header-background-color; // Reuse header background color
-$footer-text-color: #fff;
-$footer-padding: $header-padding; // Reuse header padding
+// Define color variables
+$primary-color: #2196F3;  // Blue as primary
+$secondary-color: #ffffff; // White as secondary
+$text-color: #333;         // Dark gray text color
+$background-color: #f9f9f9; // Light background
 
-/* Header Styles */
-.header {
-  background-color: $header-background-color;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: $header-text-color;
-  padding: $header-padding;
-  box-sizing: border-box;
-
-  h1 {
-    font-size: 1rem; // Adjust font size as needed
-    margin: 0;
-    font-weight: bold;
-  }
-
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-
-    li {
-      display: inline-block;
-      margin-right: 20px;
-    }
-  }
-
-  a {
-    text-decoration: none;
-    color: inherit;
-
-    &:hover {
-      color: #007bff;
-    }
-  }
+// General styles
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: $background-color;
+  color: $text-color;
 }
 
-/* Footer Styles */
-.footer {
-  background-color: $footer-background-color;
-  padding: $footer-padding;
+// Container layout
+.container-fluid {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+  align-items: center; // Center content horizontally
+}
+
+// Company title
+.company {
+  font-size: 3rem;
+  color: $primary-color;
+  margin-top: 40px;
   text-align: center;
-  color: $footer-text-color;
+  font-weight: 700;
+}
+
+// Content area where the router-outlet injects content
+.content-area {
+  flex: 1; // Ensures the content area takes available space
+  width: 100%;
+  max-width: 1200px; // Restrict max width for readability
+  padding: 20px;
   box-sizing: border-box;
+  text-align: center; // Center-align any content within
+}
+
+// Footer styling
+.footer {
+  background-color: $primary-color;
+  color: $secondary-color;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9rem;
 
   p {
-    font-size: 0.8rem; // Adjust font size as needed
     margin: 0;
   }
 }

@@ -1,19 +1,8 @@
-<html>
-  <div class="container">
-    <nav class="header">
-      <ul>
-        <li><a routerLink="/home">Home</a></li>
-        <li><a routerLink="/register">Register</a></li>
-        <li><a routerLink="/contact">Contact</a></li>
-      </ul>
-    </nav>
-    <body>
-      <div>
-        <router-outlet></router-outlet>
-      </div>
-    </body>
-    <nav class="footer">
-      <p>&copy; {{ year }} Telugu Online World</p>
-    </nav>
+<div class="container-fluid">
+  <div class="company">Telugu Online World</div>
+
+  <!-- Main content will be injected here based on routes -->
+  <div class="content-area">
+    <app-home></app-home>
   </div>
-</html>
+</div>
