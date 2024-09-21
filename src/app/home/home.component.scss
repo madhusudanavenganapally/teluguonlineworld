@@ -57,11 +57,25 @@ section {
 }
 
 .video-section {
-  iframe {
-    width: 100%;
-    height: auto; // Responsive video
-  }
+  text-align: center; /* Center the heading */
+  margin: 20px 0; /* Add some margin */
 }
+
+.video-container {
+  position: relative;
+  padding-top: 46.25%; /* 16:9 Aspect Ratio */
+  height: 0; /* No height */
+  overflow: hidden; /* Hide overflow */
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Full height */
+}
+
 
 .reasons {
   list-style: none;

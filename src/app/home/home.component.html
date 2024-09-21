@@ -18,12 +18,16 @@
 
   <section class="video-section">
     <h2>Discover Our Program</h2>
-    <iframe
-      src="https://www.youtube.com/embed/ay7tKi5qx0I"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen></iframe>
+    <div class="video-container">
+      <iframe
+        src="https://www.youtube.com/embed/cVDTLHdGvOI"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
   </section>
+
 
 
   <section>
@@ -83,8 +87,9 @@
       <h2>Contact Us</h2>
       <p>Have questions or want to register for classes? We’re here to help!</p>
       <div class="contact-buttons">
-        <a [href]="whatsappLink" class="button whatsapp-button" target="_blank">WhatsApp Us</a>
-        <a href="mailto:teluguonlineworldteaching&#64;gmail.com" class="button">Email Us</a>
+        <span><a [href]="whatsappLink" class="button whatsapp-button" target="_blank">WhatsApp Us</a></span>
+        <span> <a href="mailto:teluguonlineworldteaching&#64;gmail.com" class="button">Email Us</a>
+        teluguonlineworldteaching&#64;gmail.com</span>
       </div>
     </div>
   </section>
