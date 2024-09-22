@@ -13,7 +13,7 @@ whatsappLink: string;
 
   constructor() {
     // Base64 encoded phone number
-    const base64Phone = "OTE3NDA2MjAyMjAy";
+    const base64Phone = "OTE5NTM1MzAwMjQ1";
     const phoneNumber = atob(base64Phone);
     this.whatsappLink = `https://wa.me/${phoneNumber}`;
   }
