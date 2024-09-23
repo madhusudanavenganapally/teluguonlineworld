@@ -189,6 +189,21 @@ section {
   }
 }
 
+ .meet-link {
+      text-align: center;
+      margin: 10px 0;
+      background-color: #e7f3ff;
+      padding: 10px;
+      border: 1px solid #007bff;
+      border-radius: 5px;
+    }
+
+    .meet-link a {
+      color: #007bff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
 // Footer
 footer {
   text-align: center;
@@ -210,3 +225,5 @@ footer {
     padding: 10px 20px; // Smaller button padding for mobile
   }
 }
+
+
