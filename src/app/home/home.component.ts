@@ -39,8 +39,9 @@ export class HomeComponent {
       hour: 'numeric',
       minute: 'numeric'
     };
-   const startTime = sessionStart.toLocaleString('en-US', options);
-   const endTime = sessionEnd.toLocaleString('en-US', options);
+    const startTime = sessionStart.toLocaleString('en-US', options).replace(/GMT.*$/, '').trim();
+    const endTime = sessionEnd.toLocaleString('en-US', options).replace(/GMT.*$/, '').trim();
+
 
     // Construct session date string
     this.sessionDate = `${monthName} ${day}, ${year} from ${startTime} to ${endTime} (${this.userTimezone})`;
