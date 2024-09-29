@@ -23,8 +23,8 @@ export class HomeComponent {
     this.userTimezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
 
     // Set the session date and time (in UTC)
-    const sessionStart = new Date('2024-09-29T15:30:00Z'); // 3:00 PM UTC
-    const sessionEnd = new Date('2024-09-29T16:00:00Z'); // 3:30 PM UTC
+    const sessionStart = new Date('2024-10-05T15:30:00Z'); // 3:00 PM UTC
+    const sessionEnd = new Date('2024-10-05T16:00:00Z'); // 3:30 PM UTC
 
     // Extract the month name
     const optionsMonth: Intl.DateTimeFormatOptions = { month: 'long' };
